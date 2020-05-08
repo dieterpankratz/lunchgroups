@@ -1,24 +1,42 @@
-# README
+# Ruby on Rails Code Challenge for DataGuard
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple Ruby on Rails App that
+The groups should be of equal size (as much as possible) and employees of the same
+unit (e.g. HR, IT) should be spread as much as possible in the different groups.
+Every week, new groups are supposed to be different than in the previous weeks.
+There is a button which will generate the list of groups.
 
-Things you may want to cover:
+[*Here is the deployed App *](https://www.#.com/)
 
-* Ruby version
+## Getting started
 
-* System dependencies
+To get started with the app, clone the repo and then install the needed gems:
 
-* Configuration
+```
+$ bundle install
+```
+In case you’ve previously installed a version of a gem (such as Rails itself) other than the one specified by the Gemfile, it’s a good idea to update the gems with bundle update to make sure the versions match
+```
+$ bundle update
+```
 
-* Database creation
+Next, migrate the database:
 
-* Database initialization
+```
+$ rails db:migrate
+```
 
-* How to run the test suite
+Finally, run the test suite to verify that everything is working correctly:
 
-* Services (job queues, cache servers, search engines, etc.)
+```
+$ rails test
+```
 
-* Deployment instructions
+If the test suite passes, you'll be ready to run the app in a local server:
 
-* ...
+```
+$ rails server
+```
+
+For seeing the app in production:
+[*Simple App* (On Heroku)](https://www.#.com)
