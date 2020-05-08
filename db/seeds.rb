@@ -20,7 +20,6 @@ puts 'creating groups...'
   group.save!
 end
 puts 'created 10 groups!'
-
 puts 'creating 1 event (means all the assignments!) ...'
 employees = Employee.all
 groups = Group.all
