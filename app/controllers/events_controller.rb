@@ -24,5 +24,6 @@ class EventsController < ApplicationController
           group: groups[i]
         )
       end
+      redirect_to root_url
     end
 end
