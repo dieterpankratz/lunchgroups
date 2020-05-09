@@ -1,14 +1,45 @@
-UNITS = ['HR', 'DEV', 'PM', 'PR', 'ACC']
-
 puts 'creating employees...'
 
-50.times do
+10.times do
   employee = Employee.new(
     name: Faker::Name.name,
-    unit: UNITS.sample
+    unit: "HR"
   )
   employee.save!
 end
+
+10.times do
+  employee = Employee.new(
+    name: Faker::Name.name,
+    unit: "DEV"
+  )
+  employee.save!
+end
+
+10.times do
+  employee = Employee.new(
+    name: Faker::Name.name,
+    unit: "PM"
+  )
+  employee.save!
+end
+
+10.times do
+  employee = Employee.new(
+    name: Faker::Name.name,
+    unit: "PR"
+  )
+  employee.save!
+end
+
+10.times do
+  employee = Employee.new(
+    name: Faker::Name.name,
+    unit: "ACC"
+  )
+  employee.save!
+end
+
 puts 'created 50 employees!'
 
 puts 'creating groups...'
