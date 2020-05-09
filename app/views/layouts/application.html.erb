@@ -18,16 +18,17 @@
     <header class="navbar navbar-fixed-top navbar-inverse">
       <div class="container">
         <%= link_to "Lunch Group Generator", root_path, id: "logo" %>
-        <nav>
-          <ul class="nav navbar-nav navbar-right">
-            <li><%= link_to "Employees",  '#' %></li>
-            <li><%= link_to "Groups",     '#' %></li>
-          </ul>
-        </nav>
       </div>
     </header>
     <div class="container">
       <%= yield %>
+      <footer class="footer">
+        <small>
+          The Lunch Group Generator</a>
+          by <a href="https://github.com/pankratz117/">Dieter Pankratz</a>
+        </small>
+        <nav>
+      </footer>
     </div>
   </body>
 </html>

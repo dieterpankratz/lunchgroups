@@ -1,10 +1,10 @@
 class EventsController < ApplicationController
 
   def current_event_home
-    @event = Event.last
+    @events = Event.all
   end
 
-  def create
+  def shuffle
     groups = Group.all
     array_of_groups = Array.new(groups.length){ Array.new }
 
@@ -16,7 +16,7 @@ class EventsController < ApplicationController
         array_of_groups[i] << employee
       end
     end
-
+    Event.destroy_all
     array_of_groups.each_with_index do |group, i|
       group.each do | employee |
         Event.create!(
@@ -24,7 +24,7 @@ class EventsController < ApplicationController
           group: groups[i]
         )
       end
-      redirect_to root_url
     end
+    @events = Event.all
   end
 end

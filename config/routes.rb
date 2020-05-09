@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
+  get '/shuffle', to: 'events#shuffle'
   root 'events#current_event_home'
-  resources :events do
-    resources :groups, only: [:index, :show] do
-      resources :employees, only: [:index]
-    end
-    resources :employees, only: [:index]
-  end
-  resources :employees
 end
