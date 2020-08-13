@@ -6,7 +6,7 @@ unit (e.g. HR, IT) should be spread as much as possible in the different groups.
 Every week, new groups are supposed to be different than in the previous weeks.
 There is a button which will generate the list of groups.
 
-[*Here is the deployed App *](https://www.#.com/)
+[*Here is the deployed App *](https://serene-springs-03138.herokuapp.com/)
 
 ## Getting started
 
